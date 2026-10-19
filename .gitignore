@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+*.log
+# keep your own Google Client ID out of a public repo
+config.local.json

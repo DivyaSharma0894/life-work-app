@@ -1,0 +1,10 @@
+{
+  "name": "life-work-app",
+  "version": "0.6.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node serve.mjs",
+    "test": "node --test test/logic.test.mjs test/drive.test.mjs test/lock.test.mjs test/inbox.test.mjs test/stats.test.mjs test/calories.test.mjs"
+  }
+}
