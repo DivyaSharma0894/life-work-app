@@ -62,8 +62,9 @@ function SetupGuide({ initial, onContinue, onBack }) {
         <ol>
           <li>Open <a href="https://console.cloud.google.com/projectcreate" target="_blank" rel="noopener noreferrer">Google Cloud Console</a> and create a project called “Life and Work”.</li>
           <li>Open <a href="https://console.cloud.google.com/apis/library/drive.googleapis.com" target="_blank" rel="noopener noreferrer">Google Drive API</a> and press <b>Enable</b>.</li>
-          <li>Go to <b>APIs &amp; Services › OAuth consent screen</b>. Choose <b>External</b>, fill the app name and your email, and add your own Google account under <b>Test users</b>.</li>
-          <li>Go to <b>Credentials › Create credentials › OAuth client ID</b>. Choose <b>Web application</b>.</li>
+          <li>Go to <b>APIs &amp; Services › OAuth consent screen</b> (newer Google Cloud: <b>Google Auth Platform</b>). If it shows <b>Get started</b>, click it, enter an app name and your email, choose <b>External</b> and create it.</li>
+          <li><b>Add yourself as a test user. Do not skip this.</b> On the same screen open <b>Audience</b> (or the <b>Test users</b> section), check that the status is <b>Testing</b>, click <b>Add users</b>, type the exact Gmail address you will sign in with and <b>Save</b>. If it is not in the list, Google blocks sign-in with <i>Error 403: access_denied</i>.</li>
+          <li>Go to <b>Credentials</b> (or <b>Clients</b>) and click <b>Create credentials › OAuth client ID</b>. Choose <b>Web application</b>.</li>
           <li>Under <b>Authorised JavaScript origins</b> add <span class="code">${location.origin}</span></li>
           <li>Create it, copy the <b>Client ID</b> and paste it below.</li>
         </ol>
